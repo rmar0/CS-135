@@ -13,40 +13,35 @@ Output: A table of calculated values.
 using namespace std;
 
 int main() {
+    // Initialize side length
+    double side_length = 0.0;
 
-//initialize side length
-double side_length = 0.0;
+    // Prompt
+    cout << "Enter octagon’s side length: ";
+    cin >> side_length;
 
-//prompt
-cout << "Enter octagon’s side length: ";
-double input = 0.0;
-cin >> side_length;
+    // Function to calculate the area of an octagon
+    double area = 2 * pow(side_length, 2) * (1 + sqrt(2));
 
-// function to calculate the area of an octagon
-double area = 2 * pow(side_length, 2) * (1 + sqrt(2));
+    // Calculate the circumference
+    double circumcircle_radius = (0.5 * side_length) * sqrt(4 + 2 * sqrt(2));
 
-//calculate the circumference
- double circumcircle_radius = (0.5 * side_length) * sqrt(4 + 2 * sqrt(2));
+    // Calculate circle radius
+    double incircle_radius = (0.5 * side_length) * (1 + sqrt(2));
 
- //calculate circle radius
- double incircle_radius = (0.5 * side_length) * (1 + sqrt(2));
-
-//calculation table
-cout << "+--------------+--------------+--------------+--------------+\n";
-//fixed point
-cout << fixed << setprecision(2);
-cout << "| side length  | area         | circumcircle | incircle     |\n";
-cout << "+--------------+--------------+--------------+--------------+\n";
-cout << "| " << setw(12) << side_length 
-              << " | " << setw(12) << area 
-              << " | " << setw(12) << circumcircle_radius 
-              << " | " << setw(12) << incircle_radius 
-              << " |\n";
+    // Calculation table
+    cout << "+--------------+--------------+--------------+--------------+\n";
+    // Fixed point
+    cout << fixed << setprecision(2) << right;
+    cout << "| side length  | area         | circumcircle | incircle     |\n";
+    cout << "+--------------+--------------+--------------+--------------+\n";
+    cout << "| " << setw(12) << side_length 
+         << " | " << setw(12) << area 
+         << " | " << setw(12) << circumcircle_radius 
+         << " | " << setw(12) << incircle_radius 
+         << " |\n";
     cout << "+--------------+--------------+--------------+--------------+\n";
 
-
     return 0;
-
-
-
 }
+
