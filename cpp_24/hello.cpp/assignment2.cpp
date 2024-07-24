@@ -1,8 +1,9 @@
 /*
 Name: Ruth Marroquin, 5008310315#, 1003, Assignment #2
-Description: 
-Input: 
-Output: 
+Description: The user will be prompted to input a floating point number and the program will output a calculated table of the area, 
+circumference, and radius.
+Input: A floating point number by the user.
+Output: A table of calculated values. 
 */
 
 #include <iostream>
