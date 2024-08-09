@@ -1,1 +1,1 @@
-# CS-135 This is my assignment log for CS 135. ^_^
+# CS-135 This is my assignment log for CS ^_^
